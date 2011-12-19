@@ -40,7 +40,7 @@ Yes, this is really the main benefit of Good Writer Checkify.  Each individual B
 = So even if I have 2 or 3 un-published Drafts In-progress at the same time.. the checked Checkboxes remain unique to each post ? =
 Yes
 
-= Why is that the checkbox's don't seem to be saved when I click on Save Draft ?  =
+= Why is that the checkbox's sometimes don't seem to be saved when I click on Save Draft ?  =
   This plugin requires that you at least put something - even just a couple of characters as a beginning - in the Title box, before clicking Save Draft, so that it knows it's saving a unique blog entry.
 
 = I'd like to just use the blog check-off items that I see in the screenshots =
