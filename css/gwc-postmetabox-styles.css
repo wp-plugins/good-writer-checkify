@@ -1,0 +1,26 @@
+#gwc_sectionid ul li {
+  font: 12px/1.4 "Lucida Grande","Lucida Sans","Lucida Sans Unicode",helvetica,arial,sans-serif;
+}
+
+ul.outer_reminder_ul_post_page input[type="checkbox"]{ 
+   margin-right: 10px;  
+}
+
+
+/*  -------- POST EDITING --------- */
+
+span.checked_off {
+  text-decoration: line-through;
+}
+
+
+ul.reminder_list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.reminder_list li {
+    background: url(../images/round.gif) no-repeat 0 50%;
+    padding-left: 25px; 
+}
