@@ -35,13 +35,13 @@ The Key is to You go back to all your saved web articles, books, etc.. and pick 
 
 == Frequently Asked Questions ==
 = Do the checkboxes get saved anywhere, or are they just there for the visual reminder purpose =
-Yes, this is really the main benefit of Good Writer Checkify.  Each individual blog entry gets its own separate checklist .. i.e. each Blog Entry remembers how many of the checkpoints have been satisfied.
+Yes, this is really the main benefit of Good Writer Checkify.  Each individual Blog entry gets its own separate checklist .. i.e. each Blog Entry remembers how many of the "check points" have been satisfied.
 
-= So even if I have 2 or 3 unpublished Drafts In-progress at the same time.. the checked Checkboxes unique to each post ? =
+= So even if I have 2 or 3 un-published Drafts In-progress at the same time.. the checked Checkboxes remain unique to each post ? =
 Yes
 
-= Why is that the checkbox's don't seem to be saved when I click on Saav Draft  =
-  This plugin requires that you at least put something - even just a couple of characters as a beginning - in the Title box, before clicking Save Draft. 
+= Why is that the checkbox's don't seem to be saved when I click on Save Draft ?  =
+  This plugin requires that you at least put something - even just a couple of characters as a beginning - in the Title box, before clicking Save Draft, so that it knows it's saving a unique blog entry.
 
 = I'd like to just use the blog check-off items that I see in the screenshots =
 Okay, just open the sample_blog_guidelines.txt file in the root of this plugin's directory.
