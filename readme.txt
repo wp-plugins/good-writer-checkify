@@ -30,8 +30,8 @@ The Key is to You go back to all your saved web articles, books, etc.. and pick 
 1. Download and extract the Plugin zip file.
 2. Upload the folder containing the Plugin files to your WordPress Plugins folder (usually ../wp-content/plugins/ folder).
 3. Activate the Plugin via the 'Plugins' menu in WordPress.
-4. Once activated you go to the Plugin options by clicking the 'Attention Div Boxes' link under the 'Settings' menu.
-5. There will be four default DIV's already there which may serve your purpose, however of course change them as you need.
+4. Once activated you go to the Plugin options by clicking the 'Good Writer Checkfiy' link under the 'Settings' menu.
+5. You then enter in up to 10 Reminder/Guidelines into the text inputs.
 
 == Frequently Asked Questions ==
 = Do the checkboxes get saved anywhere, or are they just there for the visual reminder purpose =
