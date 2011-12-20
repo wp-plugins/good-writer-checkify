@@ -56,7 +56,7 @@ class Good_Writer_Checkify_Options {
 			'gwc_sectionid',
 			__( 'Good Writer Checkify', 'gwc_textdomain' ),
 			array($this, 'gwc_print_div_carousel'),
-			'post' 
+			'page' 
 		);
 	}
 	
