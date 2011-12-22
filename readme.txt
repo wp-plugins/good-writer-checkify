@@ -34,6 +34,9 @@ The Key is to You go back to all your saved web articles, books, etc.. and pick 
 5. You then enter in up to 10 Reminder/Guidelines into the text inputs.
 
 == Frequently Asked Questions ==
+= Does there have to be 10 items.. I only need about 5 =
+No, as few as you need. In the Settings page, if you fill out only 5 of the item boxes, only 5 will show in your Post Editing Page.
+
 = Do the checkboxes get saved anywhere, or are they just there for the visual reminder purpose =
 Yes, this is really the main benefit of Good Writer Checkify.  Each individual Blog entry gets its own separate checklist .. i.e. each Blog Entry remembers how many of the "check points" have been satisfied.
 
@@ -45,6 +48,9 @@ Yes
 
 = I'd like to just use the blog check-off items that I see in the screenshots =
 Okay, just open the sample_blog_guidelines.txt file in the root of this plugin's directory.
+
+= I don't see the checkboxes on the Page editing screen =
+Please re-download this plugin - this was fixed. Any tips/reminders you already entered in Settings will stay intact
 
 == Screenshots ==
 
