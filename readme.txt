@@ -59,8 +59,6 @@ Please re-download this plugin - this was fixed. Any tips/reminders you already 
 2. You can turn off the checkmarks if you'd rather just have the reminders there as a reference, and not to necessarily actively check off.
 
 
-3. If you know that certain check-off items will pretty much always be done right away, or are taken care of automatically, just mark that item as check-it-by-default when a new post/page is started.
-
 == Changelog ==
 
 = 0.1 =
