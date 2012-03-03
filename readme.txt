@@ -34,6 +34,12 @@ The Key is to You go back to all your saved web articles, books, etc.. and pick 
 5. You then enter in up to 10 Reminder/Guidelines into the text inputs.
 
 == Frequently Asked Questions ==
+= Will there be a fix for the header design that this plugin somehow breaks =
+Someone emailed me about it through my contact form at my site, but didn't leave a return email. Was not able to duplicate this unfortunately.
+
+= Why do the checkboxes get reset when I use the Quick Edit feature =
+The same person wrote in with that comment, and I unfortunately have not had time to research how to fix this. My apologies.
+
 = Does there have to be 10 items.. I only need about 5 =
 No, as few as you need. In the Settings page, if you fill out only 5 of the item boxes, only 5 will show in your Post Editing Page.
 
