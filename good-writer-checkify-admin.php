@@ -34,14 +34,7 @@ class Good_Writer_Checkify_Options {
 		//add_action( "admin_print_scripts-$mypage", array( &$this,'gwc_admin_head') );
 	}
 
-    // Tell Wordpress to load a custom CSS file which only be used for this plugin, while using the Options Page
-	// ---------------------------------------------------------------------------------------------------
-	/*function gwc_admin_head() {
-		$plugindir = get_settings('home').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
-	
-		echo '<link rel="stylesheet" href="' . $plugindir . '/css/gwc-admin-styles.css" type="text/css" />';
-		echo '<link rel="stylesheet" href="' . $plugindir . '/js/jquery.cluetip.css" type="text/css" />';
-	}*/
+   
 
 	/* Adds a box to the main column on the Post and Page edit screens */
 	function gwc_div_carousel() {
@@ -108,10 +101,7 @@ class Good_Writer_Checkify_Options {
 			wp_register_style('good_writer_checkify_metabox_StyleSheets', $myStyleUrl);
 			wp_enqueue_style( 'good_writer_checkify_metabox_StyleSheets');
 		}
-		/*if ( file_exists($clueTipStyleFile) ) {
-			wp_register_style('good_writer_checkify_cluetip_metabox_StyleSheets', $clueTipStyleUrl);
-			wp_enqueue_style( 'good_writer_checkify_cluetip_metabox_StyleSheets');
-		}*/
+	
 	}
 
 
@@ -196,10 +186,7 @@ class Good_Writer_Checkify_Options {
 
 function good_writer_checkify_validate($input) {
        
-   // $input['bwidth1'] =  intval($input['bwidth1']);
-   // $input['bwidth2'] =  intval($input['bwidth2']);
-   // $input['bwidth3'] =  intval($input['bwidth3']);
-   // $input['bwidth4'] =  intval($input['bwidth4']);
+ 
     
 	return $input;
 }

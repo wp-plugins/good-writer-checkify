@@ -3,7 +3,7 @@ Contributors: pythoPhpSteve
 Tags: quality blog, quality checklist, writer aid, checklist
 Requires at least: 2.7
 Tested up to: 3.3
-Stable tag: 0.1
+Stable tag: 0.1.5
 
 A Checklist tool that serves as your own "Blog entry Mentor"
 
@@ -16,6 +16,8 @@ However It's another story to actually implement these principles into your day 
 I wrote Good Writer Checkify to provide for an in-your-face kind of reminder, as you write each post, to nudge you to improve the *Content* itself.  
 
 The Key is to You go back to all your saved web articles, books, etc.. and pick 10 of the best blogging principles and insert them into this Plugin's settings, so that you can check them off as your write each blog entry.  Of course, you can just start fresh if you have no bookmarked articles and just Google for Writing/Blogging Tips.
+
+Contact: The contact page for this plugin is: <a href="http://stevebailey.biz/contactform.php" target="_blank">ContactForm</a>
 
 == Installation ==
 
@@ -34,11 +36,11 @@ The Key is to You go back to all your saved web articles, books, etc.. and pick 
 5. You then enter in up to 10 Reminder/Guidelines into the text inputs.
 
 == Frequently Asked Questions ==
-= Will there be a fix for the header design that this plugin somehow breaks =
-Someone emailed me about it through my contact form at my site, but didn't leave a return email. Was not able to duplicate this unfortunately.
+= Will there be a fix for the Wordpress Header design that this plugin somehow breaks =
+Someone emailed me about it through my contact form at my site, but didn't leave a return email. 
+Was not able to duplicate this unfortunately. If you notice any kind of breakage that is a direct result of having this plugin activated, please
+go to the Description tab above, and the follow the link to my contact form on my generate site. And I'd appreciate a screenshot so that I could exactly what the problem is.
 
-= Why do the checkboxes get reset when I use the Quick Edit feature =
-The same person wrote in with that comment, and I unfortunately have not had time to research how to fix this. My apologies.
 
 = Does there have to be 10 items.. I only need about 5 =
 No, as few as you need. In the Settings page, if you fill out only 5 of the item boxes, only 5 will show in your Post Editing Page.
@@ -66,6 +68,8 @@ Please re-download this plugin - this was fixed. Any tips/reminders you already 
 
 
 == Changelog ==
+= 0.1.5 =
+* fixed bug - before this fix, editing a post via Quick Edit wiped out the saved checkmarks
 
 = 0.1 =
 * initial version
