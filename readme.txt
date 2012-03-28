@@ -5,13 +5,13 @@ Requires at least: 2.7
 Tested up to: 3.3
 Stable tag: 0.1.5
 
-A Checklist tool that serves as your own "Blog entry Mentor"
+A Checklist tool that serves as your own "Blog Entry Coach"
 
 == Description ==
 
 It's easy to accumulate a lot of web bookmarks to Top-10 Blog Tips, or Books/Ebooks on how to engage a reader with your writing. 
 
-However It's another story to actually implement these principles into your day to day blogging, especially when you get caught up in the mechanics of how to SEO-ize your site, how to improve the look of your Theme, etc..
+However It's another story to actually implement these principles into your day to day blogging, ( especially when you get caught up taking time on the Non-Writing mechanics of how to SEO-ize your site, how to improve the look of your Theme, etc..)
 
 I wrote Good Writer Checkify to provide for an in-your-face kind of reminder, as you write each post, to nudge you to improve the *Content* itself.  
 
@@ -37,6 +37,7 @@ Contact: The contact page for this plugin is: <a href="http://stevebailey.biz/co
 
 == Frequently Asked Questions ==
 = Will there be a fix for the Wordpress Header design that this plugin somehow breaks =
+I don't know the specifics of this breakage, if it does exist.
 Someone emailed me about it through my contact form at my site, but didn't leave a return email. 
 Was not able to duplicate this unfortunately. If you notice any kind of breakage that is a direct result of having this plugin activated, please
 go to the Description tab above, and the follow the link to my contact form on my generate site. And I'd appreciate a screenshot so that I could exactly what the problem is.
