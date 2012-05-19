@@ -3,7 +3,7 @@ Contributors: pythoPhpSteve
 Tags: quality blog, quality checklist, writer aid, checklist
 Requires at least: 2.7
 Tested up to: 3.3
-Stable tag: 0.1.5
+Stable tag: 0.2.0
 
 A Checklist tool that serves as your own "Blog Entry Coach"
 
@@ -36,12 +36,6 @@ Contact: The contact page for this plugin is: <a href="http://stevebailey.biz/co
 5. You then enter in up to 10 Reminder/Guidelines into the text inputs.
 
 == Frequently Asked Questions ==
-= Will there be a fix for the Wordpress Header design that this plugin somehow breaks =
-I don't know the specifics of this breakage, if it does exist.
-Someone emailed me about it through my contact form at my site, but didn't leave a return email. 
-Was not able to duplicate this unfortunately. If you notice any kind of breakage that is a direct result of having this plugin activated, please
-go to the Description tab above, and the follow the link to my contact form on my generate site. And I'd appreciate a screenshot so that I could exactly what the problem is.
-
 
 = Does there have to be 10 items.. I only need about 5 =
 No, as few as you need. In the Settings page, if you fill out only 5 of the item boxes, only 5 will show in your Post Editing Page.
@@ -69,6 +63,8 @@ Please re-download this plugin - this was fixed. Any tips/reminders you already 
 
 
 == Changelog ==
+= 0.2.0 =
+* fixed css bug - previously, this plugin's CSS was creating an obnoxious blue background/white text in the corner of Wordpress's system settings pages
 = 0.1.5 =
 * fixed bug - before this fix, editing a post via Quick Edit wiped out the saved checkmarks
 
@@ -77,3 +73,4 @@ Please re-download this plugin - this was fixed. Any tips/reminders you already 
 
 
 == Upgrade Notice ==
+If you're really tired of that obnoxious (though harmless) blue box that shows up in some of the Settings Pages, please upgrade to 0.2.0
