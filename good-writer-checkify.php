@@ -3,7 +3,7 @@
 Plugin Name: Good Writer Checkify
 Plugin URI: http://stevebailey.biz/contactform.php
 Description: A Checklist tool that serves as your own "Blog-Entry Mentor" in the form of a set of checkboxes.
-Version: 0.1.5
+Version: 0.2.0
 Author: Steve Bailey
 Author URI: http://stevebailey.biz/contactform.php
 License: GPL
