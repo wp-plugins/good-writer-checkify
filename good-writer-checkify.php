@@ -3,7 +3,7 @@
 Plugin Name: Good Writer Checkify
 Plugin URI: http://stevebailey.biz/contactform.php
 Description: A Checklist tool that serves as your own "Blog-Entry Mentor" in the form of a set of checkboxes.
-Version: 0.2.0
+Version: 0.2.1
 Author: Steve Bailey
 Author URI: http://stevebailey.biz/contactform.php
 License: GPL
@@ -34,13 +34,13 @@ class Good_Writer_Checkify {
 	private $initial_notes;
 	
 	function __construct() {
-		$this->initial_notes = "[ Just some starter Sample Notes: ] " . "\n\n";
-		$this->initial_notes .= "Possible Sites for blogging tips"  . "\n";
+		$this->initial_notes = __("[ Just some starter Sample Notes: ] ", 'good-writer-checkify') . "\n\n";
+		$this->initial_notes .= __("Possible Sites for blogging tips", 'good-writer-checkify')  . "\n";
 		$this->initial_notes .= "	http://problogger.net"  . "\n";
 		$this->initial_notes .= "	http://sethgodin.typepad.com/seths_blog/"  . "\n\n";
-		$this->initial_notes .= "Random thoughts: What did my most popular blog entries have in common:"  . "\n";
-		$this->initial_notes .= "	- Didn't try to edit my own extreme opinions.. left them in"  . "\n";
-		$this->initial_notes .= "	- Told that crazy story about me and my cousin or other funny craziness that my readers liked"  . "\n";
+		$this->initial_notes .= __("Random thoughts: What did my most popular blog entries have in common:", 'good-writer-checkify')  . "\n";
+		$this->initial_notes .= __("	- Didn't try to edit my own extreme opinions.. left them in", 'good-writer-checkify')  . "\n";
+		$this->initial_notes .= __("	- Told that crazy story about me and my cousin or other funny craziness that my readers liked", 'good-writer-checkify')  . "\n";
 		
 		new Good_Writer_Checkify_Options;    // starts necessary options Initialization hooks located in Options page's class, via its own __construct
 		add_action( 'wp_print_styles', array( &$this,'enqueue_my_styles') );

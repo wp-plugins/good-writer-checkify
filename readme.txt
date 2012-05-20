@@ -3,7 +3,7 @@ Contributors: pythoPhpSteve
 Tags: quality blog, quality checklist, writer aid, checklist
 Requires at least: 2.7
 Tested up to: 3.3
-Stable tag: 0.2.0
+Stable tag: 0.2.1
 
 A Checklist tool that serves as your own "Blog Entry Coach"
 
@@ -63,6 +63,8 @@ Please re-download this plugin - this was fixed. Any tips/reminders you already 
 
 
 == Changelog ==
+= 0.2.1 =
+* Added Wordpress built in internationalization calls to support non-English languages 
 = 0.2.0 =
 * fixed css bug - previously, this plugin's CSS was creating an obnoxious blue background/white text in the corner of Wordpress's system settings pages
 = 0.1.5 =
