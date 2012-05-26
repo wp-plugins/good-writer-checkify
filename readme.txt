@@ -52,8 +52,6 @@ Yes
 = I'd like to just use the blog check-off items that I see in the screenshots =
 Okay, just open the sample_blog_guidelines.txt file in the root of this plugin's directory.
 
-= I don't see the checkboxes on the Page editing screen =
-Please re-download this plugin - this was fixed. Any tips/reminders you already entered in Settings will stay intact
 
 == Screenshots ==
 
