@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Good Writer Checkify
-Plugin URI: http://stevebailey.biz/contactform.php
+Plugin URI: http://stevebailey.biz/blog/wp-attention-boxes
 Description: A Checklist tool that serves as your own "Blog-Entry Mentor" in the form of a set of checkboxes.
 Version: 0.2.1
 Author: Steve Bailey
-Author URI: http://stevebailey.biz/contactform.php
+Author URI: http://stevebailey.biz/blog/wp-attention-boxes
 License: GPL
 
 Copyright 2011 Steve Bailey (email steveswdev@gmail.com)
