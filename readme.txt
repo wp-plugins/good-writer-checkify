@@ -15,7 +15,7 @@ However It's another story to actually implement these principles into your day 
 
 I wrote Good Writer Checkify to provide for an in-your-face kind of reminder, as you write each post, to nudge you to improve the *Content* itself.  
 
-The Key is to You go back to all your saved web articles, books, etc.. and pick 10 of the best blogging principles and insert them into this Plugin's settings, so that you can check them off as your write each blog entry.  Of course, you can just start fresh if you have no bookmarked articles and just Google for Writing/Blogging Tips.
+The Key to using G.W.C is, you go back to all your saved web articles, books, ebooks, etc.. and pick 10 of the best blogging principles and insert them into this Plugin's settings, so that you can check them off as your write each blog entry.  Of course, you can just start fresh if you have no bookmarked articles and just Google for Writing/Blogging Tips.
 
 Contact: The contact page for my plugins is: <a href="http://stevebailey.biz/blog/wp-attention-boxes" target="_blank">ContactForm</a>
 
