@@ -55,16 +55,17 @@ class Good_Writer_Checkify_Options {
 	
 	/* Prints the box content */
 	function gwc_print_div_carousel ( $post ) {
+		global $total_reminders;	
 	    $default_options = get_option('good_writer_checkify_options'); 
 		$vals = array();
 		if (empty($post->post_title)) {
 		
-			foreach (range(1,10) as $indx) {
+			foreach (range(1,$total_reminders) as $indx) {
 				$vals[$indx] = $default_options['quality_blog_tip' . $indx . '_default'];
 			}
 		}
 	    else {
-			foreach (range(1,10) as $indx) {
+			foreach (range(1,$total_reminders) as $indx) {
 				$vals[$indx] = get_post_meta($post->ID, 'quality_blog_tip_done' . $indx, TRUE);
 		   
 			}
@@ -75,7 +76,7 @@ class Good_Writer_Checkify_Options {
 		}
 		echo '<ul class="outer_reminder_ul_post_page' . $styled_ul . '">';
 		echo '<input type="hidden" name="goodwriter_noncename" value="', wp_create_nonce(basename(__FILE__)), '" />';
-		foreach (range(1,10) as $indx) {
+		foreach (range(1,$total_reminders) as $indx) {
 			$tip_span_class = ($vals[$indx] == "yes" ? "tip_span checked_off" : "tip_span");
 			if (!empty($default_options['quality_blog_tip' .  $indx])) {
 				if (isset($default_options['show_checkboxes_in_edit'])) {
@@ -112,8 +113,9 @@ class Good_Writer_Checkify_Options {
 		register_setting( 'good_writer_checkify_user_options', 'good_writer_checkify_options', 'good_writer_checkify_validate' );
 	}
 
-	function gwc_plugin_options() { ?>
-        
+	function gwc_plugin_options() { 
+		global $total_reminders;        ?>
+		
 		<div class="wrap">
 		
 			<div class="icon32" id="icon-options-general"><br></div>
@@ -149,7 +151,7 @@ class Good_Writer_Checkify_Options {
 					      <span title="<?php _e("What are these ? ")?>| <?php _e("If you want any of these items checked-off, by default, when you start a brand new post, check them here")?>" id="default_checkbox_tip"><img src="<?php echo WP_PLUGIN_URL . '/good-writer-checkify/images/info.jpg'; ?>"></span>
 					    </th> 
 					</tr>
-					<?php foreach (range(1,10) as $indx) { 
+					<?php foreach (range(1,$total_reminders) as $indx) { 
 						$default_on = $options['quality_blog_tip' . $indx . '_default'];
 					?>
 					

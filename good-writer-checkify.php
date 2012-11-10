@@ -3,7 +3,7 @@
 Plugin Name: Good Writer Checkify
 Plugin URI: http://stevebailey.biz/blog/wp-attention-boxes
 Description: A Checklist tool that serves as your own "Blog-Entry Mentor" in the form of a set of checkboxes.
-Version: 0.2.1
+Version: 0.3.0
 Author: Steve Bailey
 Author URI: http://stevebailey.biz/blog/wp-attention-boxes
 License: GPL
@@ -97,8 +97,8 @@ class Good_Writer_Checkify {
 	}
 
 
-function save_goodwriter_details($post_id) {	
-	
+	function save_goodwriter_details($post_id) {	
+		global $total_reminders;
 		// verify this came from the our screen and with proper authorization.
 		/*if ( !wp_verify_nonce( $_POST['goodwriter_noncename'], 'post_type'.$post_id )) {
 			return $post_id;
@@ -126,7 +126,7 @@ function save_goodwriter_details($post_id) {
 		$vals[$indx] = get_post_meta($post->ID, 'quality_blog_tip_done' . $indx, TRUE);
 		if ( (($post->post_type == 'post') || ($post->post_type == 'page')) && ($_POST['action'] != 'inline-save')) { 
 		 
-			foreach (range(1,10) as $indx) {
+			foreach (range(1,$total_reminders) as $indx) {
 			 // error_log($_POST['quality_blog_tip_done' . $indx]);
 			  if($_POST['quality_blog_tip_done' . $indx] == "yes") {
 	          	$checkbox = "yes";

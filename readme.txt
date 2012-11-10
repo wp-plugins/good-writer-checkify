@@ -3,7 +3,7 @@ Contributors: pythoPhpSteve
 Tags: quality blog, quality checklist, writer aid, checklist
 Requires at least: 2.7
 Tested up to: 3.3
-Stable tag: 0.2.1
+Stable tag: 0.3.0
 
 A Checklist tool that serves as your own "Blog Entry Coach"
 
@@ -37,8 +37,10 @@ Contact: The contact page for my plugins is: <a href="http://stevebailey.biz/blo
 
 == Frequently Asked Questions ==
 
-= Does there have to be 10 items.. I only need about 5 =
-No, as few as you need. In the Settings page, if you fill out only 5 of the item boxes, only 5 will show in your Post Editing Page.
+= I notice there are now 25 possible reminders. Can I go in and change the code to increase that even higher? =
+Yes, now you can.  Just go into the includes directory in the code for this plugin, and edit the file, goood-writer-checkify-includes.inc and simply replace the 25 you see in there with your desired number. (I don't know what will happen if you put something like 5000, though.. probably not good results, but then I'd suggest being less stringent on yourself on your checklists :0)
+Remember, whether you leave the number at 25, or increase it, if for some drafts that you have saved, if you don't want to use that many of them, just leave them blank in the admin settings, and they won't show in the gwc meta box
+
 
 = Do the checkboxes get saved anywhere, or are they just there for the visual reminder purpose =
 Yes, this is really the main benefit of Good Writer Checkify.  Each individual Blog entry gets its own separate checklist .. i.e. each Blog Entry remembers how many of the "check points" have been satisfied.
@@ -61,6 +63,8 @@ Okay, just open the sample_blog_guidelines.txt file in the root of this plugin's
 
 
 == Changelog ==
+= 0.3.0 =
+* Increase number of possible reminders to 25. Also give user the freedom to change that number
 = 0.2.1 =
 * Added Wordpress built in internationalization calls to support non-English languages 
 = 0.2.0 =
@@ -73,4 +77,4 @@ Okay, just open the sample_blog_guidelines.txt file in the root of this plugin's
 
 
 == Upgrade Notice ==
-If you're really tired of that obnoxious (though harmless) blue box that shows up in some of the Settings Pages, please upgrade to 0.2.0
+Are you tired of only have 10 reminders at the max ? With 0.3.0 that has been increased to 25. (to make this even higher, please read the faq tab!)
