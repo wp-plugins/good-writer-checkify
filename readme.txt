@@ -3,19 +3,21 @@ Contributors: pythoPhpSteve
 Tags: quality blog, quality checklist, writer aid, checklist
 Requires at least: 2.7
 Tested up to: 3.3
-Stable tag: 0.1
+Stable tag: 0.3.0
 
-A Checklist tool that serves as your own "Blog entry Mentor"
+A Checklist tool that serves as your own "Blog Entry Coach"
 
 == Description ==
 
 It's easy to accumulate a lot of web bookmarks to Top-10 Blog Tips, or Books/Ebooks on how to engage a reader with your writing. 
 
-However It's another story to actually implement these principles into your day to day blogging, especially when you get caught up in the mechanics of how to SEO-ize your site, how to improve the look of your Theme, etc..
+However It's another story to actually implement these principles into your day to day blogging, ( especially when you get caught up taking time on the Non-Writing mechanics of how to SEO-ize your site, how to improve the look of your Theme, etc..)
 
 I wrote Good Writer Checkify to provide for an in-your-face kind of reminder, as you write each post, to nudge you to improve the *Content* itself.  
 
-The Key is to You go back to all your saved web articles, books, etc.. and pick 10 of the best blogging principles and insert them into this Plugin's settings, so that you can check them off as your write each blog entry.  Of course, you can just start fresh if you have no bookmarked articles and just Google for Writing/Blogging Tips.
+The Key to using G.W.C is, you go back to all your saved web articles, books, ebooks, etc.. and pick 10 of the best blogging principles and insert them into this Plugin's settings, so that you can check them off as your write each blog entry.  Of course, you can just start fresh if you have no bookmarked articles and just Google for Writing/Blogging Tips.
+
+Contact: The contact page for my plugins is: <a href="http://stevebailey.biz/blog/wp-attention-boxes" target="_blank">ContactForm</a>
 
 == Installation ==
 
@@ -34,14 +36,11 @@ The Key is to You go back to all your saved web articles, books, etc.. and pick 
 5. You then enter in up to 10 Reminder/Guidelines into the text inputs.
 
 == Frequently Asked Questions ==
-= Will there be a fix for the header design that this plugin somehow breaks =
-Someone emailed me about it through my contact form at my site, but didn't leave a return email. Was not able to duplicate this unfortunately.
 
-= Why do the checkboxes get reset when I use the Quick Edit feature =
-The same person wrote in with that comment, and I unfortunately have not had time to research how to fix this. My apologies.
+= I notice there are now 25 possible reminders. Can I go in and change the code to increase that even higher? =
+Yes, now you can.  Just go into the includes directory in the code for this plugin, and edit the file, goood-writer-checkify-includes.inc and simply replace the 25 you see in there with your desired number. (I don't know what will happen if you put something like 5000, though.. probably not good results, but then I'd suggest being less stringent on yourself on your checklists :0)
+Remember, whether you leave the number at 25, or increase it, if for some drafts that you have saved, if you don't want to use that many of them, just leave them blank in the admin settings, and they won't show in the gwc meta box
 
-= Does there have to be 10 items.. I only need about 5 =
-No, as few as you need. In the Settings page, if you fill out only 5 of the item boxes, only 5 will show in your Post Editing Page.
 
 = Do the checkboxes get saved anywhere, or are they just there for the visual reminder purpose =
 Yes, this is really the main benefit of Good Writer Checkify.  Each individual Blog entry gets its own separate checklist .. i.e. each Blog Entry remembers how many of the "check points" have been satisfied.
@@ -55,8 +54,6 @@ Yes
 = I'd like to just use the blog check-off items that I see in the screenshots =
 Okay, just open the sample_blog_guidelines.txt file in the root of this plugin's directory.
 
-= I don't see the checkboxes on the Page editing screen =
-Please re-download this plugin - this was fixed. Any tips/reminders you already entered in Settings will stay intact
 
 == Screenshots ==
 
@@ -66,9 +63,18 @@ Please re-download this plugin - this was fixed. Any tips/reminders you already 
 
 
 == Changelog ==
+= 0.3.0 =
+* Increase number of possible reminders to 25. Also give user the freedom to change that number
+= 0.2.1 =
+* Added Wordpress built in internationalization calls to support non-English languages 
+= 0.2.0 =
+* fixed css bug - previously, this plugin's CSS was creating an obnoxious blue background/white text in the corner of Wordpress's system settings pages
+= 0.1.5 =
+* fixed bug - before this fix, editing a post via Quick Edit wiped out the saved checkmarks
 
 = 0.1 =
 * initial version
 
 
 == Upgrade Notice ==
+Are you tired of only have 10 reminders at the max ? With 0.3.0 that has been increased to 25. (to make this even higher, please read the faq tab!)

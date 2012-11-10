@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Good Writer Checkify
-Plugin URI: http://stevebailey.biz/blog/good-writer-checkify
+Plugin URI: http://stevebailey.biz/blog/wp-attention-boxes
 Description: A Checklist tool that serves as your own "Blog-Entry Mentor" in the form of a set of checkboxes.
-Version: 0.1
+Version: 0.3.0
 Author: Steve Bailey
-Author URI: http://stevebailey.biz/
+Author URI: http://stevebailey.biz/blog/wp-attention-boxes
 License: GPL
 
 Copyright 2011 Steve Bailey (email steveswdev@gmail.com)
@@ -34,22 +34,20 @@ class Good_Writer_Checkify {
 	private $initial_notes;
 	
 	function __construct() {
-		$this->initial_notes = "[ Just some starter Sample Notes: ] " . "\n\n";
-		$this->initial_notes .= "Possible Sites for blogging tips"  . "\n";
+		$this->initial_notes = __("[ Just some starter Sample Notes: ] ", 'good-writer-checkify') . "\n\n";
+		$this->initial_notes .= __("Possible Sites for blogging tips", 'good-writer-checkify')  . "\n";
 		$this->initial_notes .= "	http://problogger.net"  . "\n";
 		$this->initial_notes .= "	http://sethgodin.typepad.com/seths_blog/"  . "\n\n";
-		$this->initial_notes .= "Random thoughts: What did my most popular blog entries have in common:"  . "\n";
-		$this->initial_notes .= "	- Didn't try to edit my own extreme opinions.. left them in"  . "\n";
-		$this->initial_notes .= "	- Told that crazy story about me and my cousin or other funny craziness that my readers liked"  . "\n";
+		$this->initial_notes .= __("Random thoughts: What did my most popular blog entries have in common:", 'good-writer-checkify')  . "\n";
+		$this->initial_notes .= __("	- Didn't try to edit my own extreme opinions.. left them in", 'good-writer-checkify')  . "\n";
+		$this->initial_notes .= __("	- Told that crazy story about me and my cousin or other funny craziness that my readers liked", 'good-writer-checkify')  . "\n";
 		
 		new Good_Writer_Checkify_Options;    // starts necessary options Initialization hooks located in Options page's class, via its own __construct
 		add_action( 'wp_print_styles', array( &$this,'enqueue_my_styles') );
-		//add_action("save_post", array( &$this, 'save_details'));
+	
 		add_action("save_post", 'save_goodwriter_details');
 		register_activation_hook(__FILE__, array( &$this,'goodwriter_activation_hook' ));
-		//add_action('wp_enqueue_scripts', array(&$this,'front_end_scripts_method'));
-		//add_action('wp_enqueue_scripts', 'front_end_scripts_method');
-		
+			
 		$this->gwc_run_upgrade_procedure();
 	}
 	
@@ -82,10 +80,7 @@ class Good_Writer_Checkify {
    // The Wordpress-preferred method of adding CSS needed by plugin.
    // Basically making this plugin's styles.css available to posts   
 	function enqueue_my_styles() {
-	//error_log("enqueue_my_style");
-		//$myStyleUrl = WP_PLUGIN_URL . '/good-writer-checkify/css/styles.css';
 		$myStyleUrl = plugins_url('/css/styles.css', __FILE__);
-		//$myStyleFile = WP_PLUGIN_DIR . '/good-writer-checkify/css/styles.css';
 		$myStyleFile = plugin_dir_path('/css/styles.css', __FILE__);
 		if ( file_exists($myStyleFile) ) {
 			wp_register_style('my_gwc_StyleSheets', $myStyleUrl);
@@ -102,8 +97,8 @@ class Good_Writer_Checkify {
 	}
 
 
-function save_goodwriter_details($post_id) {	
-	
+	function save_goodwriter_details($post_id) {	
+		global $total_reminders;
 		// verify this came from the our screen and with proper authorization.
 		/*if ( !wp_verify_nonce( $_POST['goodwriter_noncename'], 'post_type'.$post_id )) {
 			return $post_id;
@@ -125,10 +120,14 @@ function save_goodwriter_details($post_id) {
  
 		// OK, we're authenticated: we need to find and save the data	
 		
+		
 		$post = get_post($post_id);
-		if (($post->post_type == 'post') || ($post->post_type == 'page')) { 
+		
+		$vals[$indx] = get_post_meta($post->ID, 'quality_blog_tip_done' . $indx, TRUE);
+		if ( (($post->post_type == 'post') || ($post->post_type == 'page')) && ($_POST['action'] != 'inline-save')) { 
 		 
-			foreach (range(1,10) as $indx) {
+			foreach (range(1,$total_reminders) as $indx) {
+			 // error_log($_POST['quality_blog_tip_done' . $indx]);
 			  if($_POST['quality_blog_tip_done' . $indx] == "yes") {
 	          	$checkbox = "yes";
   			   } else {
