@@ -38,9 +38,8 @@ Contact: The contact page for my plugins is: <a href="http://stevebailey.biz/blo
 == Frequently Asked Questions ==
 
 = I notice there are now 25 possible reminders. Can I go in and change the code to increase that even higher? =
-Yes, now you can.  Just go into the includes directory in the code for this plugin, and edit the file, goood-writer-checkify-includes.inc and simply replace the 25 you see in there with your desired number. (I don't know what will happen if you put something like 5000, though.. probably not good results, but then I'd suggest being less stringent on yourself on your checklists :0)
-Remember, whether you leave the number at 25, or increase it, if for some drafts that you have saved, if you don't want to use that many of them, just leave them blank in the admin settings, and they won't show in the gwc meta box
-
+Yes, now you can. But not through the wordpress admin.. you have to open a code file, though it's very, very minor. 
+ Just go into the "includes" directory in the code for this plugin, and edit the file "good-writer-checkify-includes.inc" and simply replace the 25 you see in there with your desired number.
 
 = Do the checkboxes get saved anywhere, or are they just there for the visual reminder purpose =
 Yes, this is really the main benefit of Good Writer Checkify.  Each individual Blog entry gets its own separate checklist .. i.e. each Blog Entry remembers how many of the "check points" have been satisfied.
