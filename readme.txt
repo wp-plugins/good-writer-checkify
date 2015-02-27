@@ -2,7 +2,7 @@
 Contributors: pythoPhpSteve
 Tags: quality blog, quality checklist, writer aid, checklist
 Requires at least: 2.7
-Tested up to: 3.3
+Tested up to: 4.1
 Stable tag: 0.3.0
 
 A Checklist tool that serves as your own "Blog Entry Coach"
@@ -21,6 +21,10 @@ Contact: The contact page for my plugins is: <a href="http://stevebailey.biz/blo
 
 == Installation ==
 
+* The most modern way these days of course, is to go to your Plugins Page and click the Add New button, and then
+search for "Good Writer Checkify"
+
+OR use Zip-uploader
 
 * You can use Zip-uploader feature if your version of Wordpress has it
 1. Download the Plugin as Zip file, but DON'T extract the Zip File
@@ -44,7 +48,7 @@ Yes, now you can. But not through the wordpress admin.. you have to open a code 
 = Do the checkboxes get saved anywhere, or are they just there for the visual reminder purpose =
 Yes, this is really the main benefit of Good Writer Checkify.  Each individual Blog entry gets its own separate checklist .. i.e. each Blog Entry remembers how many of the "check points" have been satisfied.
 
-= So even if I have 2 or 3 un-published Drafts In-progress at the same time.. the checked Checkboxes remain unique to each post ? =
+= So even if I have 2 or more un-published Drafts In-progress at the same time.. the checked Checkboxes remain unique to each post ? =
 Yes
 
 = Why is that the checkbox's sometimes don't seem to be saved when I click on Save Draft ?  =
